@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container1" >
+            <table cellspacing="15px">
+               <tr>
+                   <td>Bill No</td>
+                   <td><input type="text" id="billno" class="button"></td>
+               </tr>
+               <tr>
+                   <td>customer name</td>
+                   <td><input type="text" id="cname" class="button"></td>
+               </tr>
+               <tr>
+                   <td>product name</td>
+                   <td>
+                       <input list="browsers" name="browser" id="pname" class="button">
+                       <datalist id="browsers">
+                           <option value="milk">
+                           <option value="chacolate"> 
+                           <option value="rice"> 
+                           <option value="noodles"> 
+                       </datalist>
+                   </td>
+               </tr>
+               <tr>
+                   <td>quantity</td>
+                   <td><input type="text" id="qty" class="button"></td>
+               </tr>
+               <tr>
+                   <td><button onclick="check()" class="button1">check</button></td>
+                   <td><button onclick="clr()" class="button2">clear</button></td>
+               </tr>
+               <tr>
+                   <td>per price</td>
+                   <td><input type="text" id="pprice" class="button"></td>
+               </tr>
+               <tr>
+                   <td>total price</td>
+                   <td><input type="text" id="tprice" class="button"></td>
+               </tr>
+               <tr>
+                   <td>discount</td>
+                   <td><input type="text" id="disc" class="button"></td>
+               </tr>
+               <tr>
+                   <td>gst</td>
+                   <td><input type="text" id="gst" class="button"></td>
+               </tr>
+               <tr>
+                   <td>grand total</td>
+                   <td><input type="text" id="tot" class="button"></td>
+               </tr>
+               <tr>
+                   
+                   <td> <button onclick="generate()" class="button3">generate</button></td>
+                   <td><button onclick="feresh()" class="btn1">refresh</button></td>
+               </tr>
+       
+            </table>
+            </div>
+            <div class="container2"  >
+
+                <table cellspacing="25px">
+                    <tr>
+                        <td> <label id="print1"  >billno:</label></td>
+                        <td><label id="line1"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print2">customer name:</label></td>
+                        <td><label id="line2"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print3">product name:</label></td>
+                        <td><label id="line3"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print4">quantity:</label></td>
+                        <td><label id="line4"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print5">per price:</label></td>
+                        <td><label id="line5"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print6">total price:</label></td>
+                        <td><label id="line6"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print7">dicount:</label></td>
+                        <td><label id="line7"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print8">gst:</label></td>
+                        <td><label id="line8"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label  id="print9">grand total:</label></td>
+                        <td><label id="line9"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn" id="print" onclick="ans()">print</button></td>
+                    </tr>
+                   
+                </table>
+                
+                <!--h1 id="line1"></h1>
+                <h1 id="line2"></h1>
+                <h1 id="line3"></h1>
+                <h1 id="line4"></h1>
+                <h1 id="line5"></h1>
+                <h1 id="line6"></h1>
+                <h1 id="line7"></h1>
+                <h1 id="line8"></h1>
+                <h1 id="line9"></h1>-->
+                
+
+       
+            </div>
+          
+    </div>
+   
+
+    <script src="home.js">
+
+    </script>
+    
+</body>
+</html>
